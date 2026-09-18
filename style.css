@@ -1,0 +1,90 @@
+:root {
+  --bg: #f5eee3;
+  --card: #fbfaf7;
+  --text: #2f2d2a;
+  --muted: #7a746b;
+  --accent: #5b6b5a;
+  --line: #ddd6cb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  line-height: 1.8;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  padding: 72px 56px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.title {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+.divider {
+  width: 40px;
+  margin: 32px auto;
+  border: none;
+  border-top: 1px solid var(--accent);
+}
+
+.intro {
+  margin: 0 0 36px;
+  font-size: 0.95rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.links a:hover,
+.links a:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--card);
+}
